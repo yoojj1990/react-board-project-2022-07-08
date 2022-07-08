@@ -86,7 +86,7 @@ function Board() {
     };
  
     return (
-        <div className=''>
+        <div className='px-20'>
             <div className='text-center font-bold text-[25px]'>
                 고객 정보 리스트
             </div>
@@ -94,13 +94,13 @@ function Board() {
             <table className='min-w-full table-auto text-gray-800'>
                 <thead className=''>
                     <tr className='bg-gray-800'>
-                        <th className='text-gray-300'>아이디</th>
-                        <th className='text-gray-300'>고객이름</th>
-                        <th className='text-gray-300'>이메일</th>
-                        <th className='text-gray-300'>전화번호</th>
-                        <th className='text-gray-300'>웹사이트</th>
-                        <th className='text-gray-300'>글수정</th>
-                        <th className='text-gray-300'>글삭제</th>
+                        <th className='text-gray-300 px-4 py-3'>아이디</th>
+                        <th className='text-gray-300 px-4 py-3'>고객이름</th>
+                        <th className='text-gray-300 px-4 py-3'>이메일</th>
+                        <th className='text-gray-300 px-4 py-3'>전화번호</th>
+                        <th className='text-gray-300 px-4 py-3'>웹사이트</th>
+                        <th className='text-gray-300 px-4 py-3'>글수정</th>
+                        <th className='text-gray-300 px-4 py-3'>글삭제</th>
                     </tr>
                 </thead>
                 <Tr info={info} handleModify={handleModify} handleDelete={handleDelete}></Tr>

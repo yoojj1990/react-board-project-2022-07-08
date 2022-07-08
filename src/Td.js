@@ -11,13 +11,13 @@ function Td({item, handleModify, handleDelete}) {
     }
 
     return (
-        <tr className=''>
-            <td className='text-center'>{item.id}</td>
-            <td className=''>{item.name}</td>
-            <td className=''>{item.email}</td>
-            <td className=''>{item.phone}</td>
-            <td className=''>{item.website}</td>
-            <td className='text-center'>
+        <tr className='bg-white border-2 border-gray-200'>
+            <td className='text-center px-4 py-3'>{item.id}</td>
+            <td className='px-4 py-3'>{item.name}</td>
+            <td className='px-4 py-3'>{item.email}</td>
+            <td className='px-4 py-3'>{item.phone}</td>
+            <td className='px-4 py-3'>{item.website}</td>
+            <td className='text-center px-4 py-3'>
                 <button className="py-2 px-2 rounded-lg shadow-md text-white bg-blue-500 hover:bg-blue-800" onClick={onModify}>수정</button>
             </td>
             <td className='text-center'>
