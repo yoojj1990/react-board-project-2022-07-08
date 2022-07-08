@@ -32,24 +32,26 @@ function Post({onSaveData}) {
 
     return (
         <div>
-            <div className='text-center font-bold text-[25px]'>
+            <div className='text-center font-bold text-[20px]'>
                 고객 정보 추가하기
             </div>
+            <br/>
             <form className='text-center' onSubmit={handleSubmit}>
                 <div>
-                    <label  className=''>고객 이름</label>
-                    <input className='' placeholder='이름을 입력해주세요' type="text" name="name" value={form.name} onChange={handleChange}></input>
-                    <label  className=''>이메일</label>
-                    <input className='' placeholder='이메일을 입력해주세요' type="email" name="email" value={form.email} onChange={handleChange}></input>
+                    <label  className='w-full font-semibold text-gray-600'>고객 이름</label>
+                    <input className='w-full py-3 px-1 border-2 border-gray-300 text-gray-800 focus:text-gray-500 focus:border-gray-200' placeholder='이름을 입력해주세요' type="text" name="name" value={form.name} onChange={handleChange}></input>
+                    <label  className='w-full font-semibold text-gray-600'>이메일</label>
+                    <input className='w-full py-3 px-1 border-2 border-gray-300 text-gray-800 focus:text-gray-500 focus:border-gray-200' placeholder='이메일을 입력해주세요' type="email" name="email" value={form.email} onChange={handleChange}></input>
                 </div>
                 <div className='text-center'>
-                    <label  className=''>전화번호</label>
-                    <input className='' placeholder='전화번호를 입력해주세요' type="text" name="phone" value={form.phone} onChange={handleChange}></input>
-                    <label  className=''>홈페이지</label>
-                    <input className='' placeholder='홈페이지를 입력해주세요' type="text" name="website" value={form.website} onChange={handleChange}></input>
+                    <label  className='w-full font-semibold text-gray-600'>전화번호</label>
+                    <input className='w-full py-3 px-1 border-2 border-gray-300 text-gray-800 focus:text-gray-500 focus:border-gray-200' placeholder='전화번호를 입력해주세요' type="text" name="phone" value={form.phone} onChange={handleChange}></input>
+                    <label  className='w-full font-semibold text-gray-600'>홈페이지</label>
+                    <input className='w-full py-3 px-1 border-2 border-gray-300 text-gray-800 focus:text-gray-500 focus:border-gray-200' placeholder='홈페이지를 입력해주세요' type="text" name="website" value={form.website} onChange={handleChange}></input>
                 </div>
+                <br/>
                 <div className='text-center'>
-                    <button className='' type="submit">저장</button>
+                    <button className='py-2 px-8 rounded-lg shadow-md text-white bg-blue-500 hover:bg-green-800' type="submit">저장</button>
                 </div>
             </form>
         </div>
