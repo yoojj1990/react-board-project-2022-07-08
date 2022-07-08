@@ -78,6 +78,12 @@ function Board() {
         handleSave(item);
         setModalOn(false);
     };
+
+    const handleDelete = (deleteId) => {
+        setInfo(
+            info => info.filter(item => item.id !== deleteId)
+        );
+    };
  
     return (
         <div className=''>
@@ -97,7 +103,7 @@ function Board() {
                         <th className='text-gray-300'>글삭제</th>
                     </tr>
                 </thead>
-                <Tr info={info} handleModify={handleModify}></Tr>
+                <Tr info={info} handleModify={handleModify} handleDelete={handleDelete}></Tr>
             </table>
             <br />
             <br />
